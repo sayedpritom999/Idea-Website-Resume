@@ -1,0 +1,159 @@
+body {
+    background: #E5E5E5;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 27px;
+    color: #000000;
+
+}
+.navbar img{
+    width: 60px;
+}
+.nav-container {
+    background: #562EFF;
+}
+.navbar .logo img{
+    width: 110px;
+} 
+.player img {
+    width: 56px
+}
+main {
+    max-width: 870px;
+}
+.top-player {
+    color: ;
+}
+.off-canvas-header {
+    display: none;
+}
+.navbar-dark .navbar-nav .nav-link {
+    line-height: 24px;
+    color: white;
+}
+.logo-text {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+}
+.header {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #562EFF;
+}
+.player-section, .courses-section {
+    background-color: white;
+    border-radius: 5px;
+}
+
+.player-section .top-player::after {
+    content: '';
+    padding: 20px;
+    border-bottom: 1px solid #D1D1D1;
+    width: 95%;
+    margin: 0 auto;
+}
+.blog-header {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 34px;
+    color: black;
+}
+.blogger-name {
+    font-size: 16px;
+    line-height: 24px;
+    color: #9F9F9F;
+}
+.blogger-name span {
+    color: #562EFF;
+}
+.courses-header {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20.0336px;
+    line-height: 23px;
+    margin-top: 25px;
+}
+.author {
+    font-size: 14.6913px;
+    line-height: 17px;
+    color: #ED6B4F;
+    margin: 20px 0;
+}
+.courses-section .stars .fa-star {
+    color: #FFC014;
+    font-size: 12px;
+    margin-right: 2px;
+
+}
+.courses-section .rating {
+    font-size: 14.6913px;
+    line-height: 22px;
+    color: #A2A2A2;
+    margin: 0 0 0 5px;
+}
+.time {
+    background: #FFE4E8;
+    height: 30px;
+    width: 95px;
+    border-radius: 14.6913px;
+    font-weight: 600;
+    font-size: 14.6913px;
+    line-height: 30px;
+    color: #FF4A60;
+    display: flex;
+    margin: auto;
+}
+.time .fa-clock {
+    line-height: 30px;
+}
+/* Responsive Area */
+@media only screen and (max-width: 991px) {
+    .off-canvas-header {
+        display: block;
+    }
+    .navbar-collapse {
+        position: fixed;
+        top: 0;
+        left: 100%;
+        width: 100%;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        overflow-y: auto;
+        visibility: hidden;
+        background-color: rgba(0, 0, 0, 0.9);
+        transition: visibility .2s ease-in-out;
+        z-index: 9;
+    }
+    .navbar-dark .navbar-nav .nav-link {
+        text-align: center;
+        margin-top: 20px;
+        color: white!important;
+    }
+    .navbar-collapse.show {
+        position: fixed;
+        visibility: visible;
+        transform: translateX(-100%);
+        width: 40%;
+        height: 100%;
+        overflow: visible;
+    }
+    .btn-close {
+        background-color: transparent;
+        border-color: transparent;
+        color: white;
+        font-size: 22px;
+    }
+    .navbar-light .navbar-toggler, .fas .fa-bars .text-white {
+        color: #fff;
+        border: 2px solid white;
+        border-radius: 4px;
+        padding: 10px;
+    }
+    #btn:focus {
+        outline: none;
+    }
+}
